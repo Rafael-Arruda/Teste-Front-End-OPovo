@@ -67,7 +67,7 @@
                 </div>
                 <div class="box-profile">
                     <h3>Perfil do candidato</h3>
-                    <p>Comunicativo, negociador, ágil e responsável</p>
+                    <p>Comunicativo, negociador, ágil e responsável.</p>
                 </div>
                 <div class="box-time">
                     <h3>Horário de trabalho</h3>
@@ -80,44 +80,50 @@
                         <h2>Envie seu currículo</h2>
                     </div>
                     <div class="form-name">
-                        <h3>Nome</h3>
-                        <input type="text"/>
+                        <label for="name">Nome</label>
+                        <input id="name" type="text"/>
                     </div>
                     <div class="form-email">
-                        <h3>E-mail</h3>
-                        <input type="text"/>
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email"/>
                     </div>
                     <div class="form-cep">
-                        <h3>Cep</h3>
-                        <input type="text"/>
+                        <label for="cep">Cep</label>
+                        <input id="cep" type="number"/>
                     </div>
                     <div class="form-address">
-                        <h3>Endereço</h3>
-                        <input type="text"/>
+                        <label for="address">Endereço</label>
+                        <input id="address" type="text"/>
                     </div>
                     <div class="form-district">
                         <div>
-                            <h3>Número</h3>
-                            <input type="text"/>
+                            <label for="number">Número</label>
+                            <input id="number" type="number"/>
                         </div>
                         <div>
-                            <h3>Bairro</h3>
-                            <input type="text"/>
+                            <label for="district">Bairro</label>
+                            <input id="district" type="text"/>
                         </div>
                     </div>
                     <div class="form-city">
                         <div>
-                            <h3>Cidade</h3>
-                            <input type="text"/>
+                            <label for="city">Cidade</label>
+                            <input id="city" type="text"/>
                         </div>
                         <div>
-                            <h3>Estado</h3>
-                            <input type="text"/>
+                            <label for="state">Estado</label>
+                            <input id="state" type="text"/>
                         </div>
                     </div>
                     <div class="box-curriculum">
-                        <h3>Currículo</h3>
-                        <button>Anexar currículo</button>
+                        <label>Currículo</label>
+                        <div>
+                            <button>Anexar currículo</button>
+                            <p>Todos os campos são obrigatórios
+                                Tamanho máximo para upload - 10mb
+                                Tipo de arquivo: .pdf ou .doc
+                            </p>
+                        </div>
                     </div>
                 </form>
 

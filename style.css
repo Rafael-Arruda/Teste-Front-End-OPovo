@@ -9,6 +9,9 @@
 }
 
 header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
     width: 100%;
     height: 8vh;
     background-color: #2374c5;
@@ -67,9 +70,8 @@ header {
     color: rgba(255, 255, 255, 0.6);
 }
 
-/*Inicio da main*/
-
 main {
+    margin-top: 8vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -79,38 +81,38 @@ main {
 }
 
 aside {
-    margin-top: 127px;
-    width: 290px;
-    display: flex;
-    align-items: center;
+    margin-top: 80px;
+    width: 240px;
     background-color: #394362;
 }
 
 img {
+    width: 320px;
+    height: 320px;
     position: relative;
-    top: -10%;
+    top: 25%;
     right: 35%;
 }
 
 .content {
     text-align: left;
-    width: 500px;
+    width: 480px;
     padding: 0px 20px;
     color:#314163;
 }
 
 .box-back {
-    margin: 50px 0;
+    margin: 30px 0;
 }
 
 .box-back span {
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
 .box-title h1 {
     font-weight: 400;
-    font-size: 50px;
+    font-size: 2.2rem;
 }
 
 .box-about {
@@ -120,27 +122,27 @@ img {
 
 .box-about h3 {
     font-weight: 400;
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
 }
 .box-about p {
     font-family: 'PT Serif', serif;
-    font-size: 19px;
-    margin-bottom: 30px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 .job-name {
-    margin: 35px 0px 30px 0px;
+    margin: 15px 0px 15px 0px;
 }
 
 .job-name h2 {
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 1.8rem;
 }
 
 .box-form {
-    padding: 15px;
+    padding: 10px;
     background-color: #cdebfd;
     display: flex;
     flex-direction: column;
@@ -149,65 +151,74 @@ img {
 
 form {
     border: 1px solid black;
-    padding: 0 10px;
+    padding: 0 8px;
 }
 
 .form-title {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .form-title h2 {
     font-weight: 400;
-    font-size: 26px;
+    font-size: 1.4rem;
 }
 
-form h3 {
-    font-size: 22px;
+form label {
+    font-size: 1.1rem;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 form input {
     width: 100%;
-    height: 33px;
-    margin-bottom: 10px;
+    height: 30px;
+    margin-bottom: 5px;
     border-radius: 5px;
     outline: none;
     color: #314163;
-    font-size: 18px;
+    font-size: 15px;
     background-color: transparent;
     padding-left: 5px;
 }
 
 .form-district, .form-city {
     display: flex;
-    gap: 15px;
+    gap: 12px;
 }
 
-.box-curriculum h3{
-    margin-bottom: 12px;
+.box-curriculum {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.box-curriculum div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 .box-curriculum button {
-    width: 165px;
-    height: 40px;
-    margin-bottom: 42px;
+    width: 140px;
+    height: 35px;
     background-color: #4a85af;
     border: 0;
     color: #fff;
-    font-size: 20px;
+    font-size: 1rem;
     cursor: pointer;
+}
+.box-curriculum p {
+    width: 180px;
+    font-size: 0.8rem;
 }
 
 .btn-send {
-    width: 165px;
-    height: 40px;
-    margin: 30px 0;
+    width: 140px;
+    height: 35px;
+    margin: 15px 0;
     background-color: #314163;
     border: 0;
     color: #fff;
-    font-size: 20px;
+    font-size: 1rem;
     cursor: pointer;
 }
-
-/*footer*/
 
 footer {
     width: 100%;
@@ -284,8 +295,6 @@ footer {
     .active-header {
         border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     }
-
-    /*Inicio da main*/
     
     aside {
         display: none;
